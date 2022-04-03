@@ -21,7 +21,7 @@
         <nav>
             <h1 class="logo"><span>lose</span> it</h1>
             <div class="nav-links">
-                <ul>
+                <ul id="menu">
                     <li><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
                     <li><a href="">Gallery</a></li>
@@ -29,12 +29,12 @@
                     <li><a href="">Contact</a></li>
                 </ul>
                 <div class="social">
-                    <a href=""><i class="fa fa-times"></i></a>
+                    <a href="#" onclick="showHidemenu()"><i class="fa fa-times"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-instagram"></i></a>
                     <a href=""><i class="fa fa-linkdin"></i></a>
-                    <a href=""><i class="fa fa-bars"></i></a>
+                    <a href="#" onclick="showHidemenu()"><i class="fa fa-bars"></i></a>
                 </div>
 
             </div>
@@ -47,6 +47,14 @@
         </div>
 
     </div>
+    <script>
+        var menu=document.getElementById('menu')
+        
+        function showHidemenu(){
+            menu.classList.toggle('opened')
+        }
+
+    </script>
 
 </body>
 
